@@ -1,0 +1,32 @@
+@import 'reset.css';
+
+body {
+  font-size: 10px;
+  margin: 0;
+}
+/*.left {
+  height: 100vh;
+  width: 14%;
+  background-color: red;
+  display: inline-block;
+}
+
+.wrap {
+  display: inline-block;
+  background-color: pink;
+  height: 100vh;
+  width: 85.8%;
+}*/
+
+
+.container {
+
+}
+
+.left {
+  display: grid;
+}
+
+.wrap {
+  display: grid;
+}
