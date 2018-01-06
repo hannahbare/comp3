@@ -20,12 +20,15 @@ body {
   color: white;
 }
 
-.icon-img {
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-  margin: 20px 20px 5px;
+.sidebox-group {
+  border-bottom: 1px solid gray;
+}
 
+.icon-img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin: 1rem 2.4rem .6rem;
 }
 
 h3 {
@@ -75,21 +78,24 @@ a:hover {
 .green-icon {
   color: green;
 }
+
 .wrap {
   flex: 2;
-  background-color: #FFFFFF;
+  /*background-color: #FFFFFF;*/
+  background-color: #EDF2F6;
   display: grid;
-  grid-template-rows: [row1-start] 6rem [row1-end] 6rem [third-line] 4rem [fourth-line] auto [last-line];
+  grid-template-rows: [row1-start] 3.6rem [row1-end] 6rem [third-line] 4rem [fourth-line] auto [last-line];
 }
 
 .top-section {
   grid-row-start: row1-start;
   grid-row-end: row1-end;
+  background-color: #FFFFFF;
 }
 
 .search-info {
   display: grid;
-  grid-template-columns: 30px auto 30px 2rem 2rem;
+  grid-template-columns: 2rem auto 2rem 2rem 2rem;
   margin: 1rem;
   font-size: 1.2rem;
   color: #9D9BAC;
@@ -105,6 +111,10 @@ a:hover {
   border: none;
 }
 
+.header-icon {
+  text-align: center;
+}
+
 .header-icon-one {
   grid-column: 3;
 }
@@ -118,12 +128,17 @@ a:hover {
 }
 
 .bottom-section {
-  background-color: #EDF2F6;
+  background-color: #FFFFFF;
 }
 
 .nav-info {
-  grid-row: 2 / span 2;
-  margin: 1rem 0 1rem 2rem;
+  display: grid;
+  grid-template-columns: 400px auto;
+  margin: 1.4rem 0 2rem 2rem;
+}
+
+.title-name {
+  grid-column: 1 / span 1;
 }
 
 h2 {
@@ -131,21 +146,19 @@ h2 {
   margin-bottom: .6rem;
 }
 
+.actions {
+  font-size: 1rem;
+  grid-column: 2 / span 1;
+  text-align: right;
+}
+
 .title-name-details {
   font-size: .8rem;
   display: inline;
-  margin-bottom: .4rem;
 }
 
 .title-location {
   margin-right: 1.2rem;
-}
-
-
-.actions {
-  float: right;
-  padding: .2rem;
-  font-size: 1rem;
 }
 
 .open-task {
@@ -160,9 +173,12 @@ h2 {
   border-radius: 50%;
   margin-right: .2rem;
 }
+/*nav {
+  background-color: #FFFFFF;
+}*/
 
 .navigation {
-  grid-row: 3 / span 3;
+  grid-row: 3 / span 1;
   font-size: .8rem;
   margin-left: 2rem;
   margin-bottom: 1rem;
@@ -173,12 +189,27 @@ h2 {
   text-decoration: none;
 }
 
+.nav:hover {
+  border-bottom: red;
+  color: blue;
+}
+
 .graph-content {
-  grid-row: 4 / span 4;
+  grid-row: 4 / span 1;
+  position: relative;
+  grid-template-columns: 60%, 40%;
+}
+
+.circle-graphs {
+  grid-column: 1;
+}
+
+.large-graph {
+  grid-column: 2;
 }
 
 .content-info {
-  grid-row: 5 / span 5;
+  grid-row: 5 / span 1;
 }
 
 
