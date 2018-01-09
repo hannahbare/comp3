@@ -18,8 +18,10 @@ body {
   color: white;
 }
 
-.sidebox-group {
-  border-bottom: 1px solid gray;
+.sidebox1,
+.sidebox2,
+.sidebox3 {
+  border-bottom: 2px solid #303949;
 }
 
 .icon-img {
@@ -32,6 +34,7 @@ body {
 h3 {
   text-align: center;
   color: #9D9BAC;
+  margin-bottom: .9rem;
 }
 
 h3:hover {
@@ -39,26 +42,38 @@ h3:hover {
   font-weight: bold;
 }
 
-.link {
-  margin: .4rem;
-  padding: .1rem;
+.sidebar-target {
+  margin-left: 15%;
+}
+
+h4 {
+  font-size: .7rem;
+  margin: 1.8rem 0 .9rem;
+  font-weight: lighter;
+}
+
+.sidebar-links {
+  display: grid;
 }
 
 a.link {
   text-decoration: none;
   color: #9D9BAC;
+  height: 1.8rem;
+  align-self: center;
 }
 
 a:hover {
   color: #FFFFFF;
   font-weight: bold;
+  background-color: #303949;
 }
 
-.sidebox2,
+/*.sidebox2,
 .sidebox3,
 .sidebox4 {
   padding: 1.6rem .6rem;
-}
+}*/
 
 .sidebar-links a {
   display: block;
@@ -80,6 +95,12 @@ a:hover {
 .green-icon {
   color: #1DA78A;
 }
+
+
+
+
+
+/* Start right side of wesbite */
 
 .wrap {
   flex: 2;
@@ -247,53 +268,13 @@ h2 {
   padding: .4rem;
 }
 
-/*CSS for attemped circle graphs
-/*.circular-chart {
-  display: block;
-  margin: 10px auto;
-  max-width: 80%;
-  max-height: 150px;
-}
-
-.chart-two {
-  margin-left: 200px;
-}
-
-.chart-three {
-  margin: auto 50px;
-}
-
-.circle {
-  stroke: #4CC790;
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }*/
 
 
 
 
+/* SECTION FOR GRAPHS */
 
 
-
-
-
-
-/*
-hr:after { 
-    background: ('<i class="fa fa-chevron-circle-up" aria-hidden="true"></i>') no-repeat top center;
-    content: "";
-    display: block;
-    text-align: center
-    height: 2rem; /* height of the ornament */
-    /*position: relative;*/
-    /*top: -2.5px; *//* half the height of the ornament */
 
 
 
@@ -311,7 +292,7 @@ hr:after {
   font-size: .9rem;
   display: grid;
   grid-template-columns: 35% 65%;
-  grid-template-rows: 60px 60px 60px 60px 60px 60px 20px 90px 60px 60px;
+  grid-template-rows: 60px 50px 50px 50px 50px 50px 20px 90px 10px 50px 50px;
   padding: 0 2rem;
   margin-top: 2rem;
 }
@@ -361,6 +342,11 @@ hr:after {
   grid-row: 6;
 }
 
+.details-row7 {
+  grid-column: 1;
+  grid-row: 7;
+}
+
 .title-row8 {
   grid-column: 1;
   grid-row: 8;
@@ -375,6 +361,11 @@ hr:after {
 .title-row10 {
   grid-column: 1;
   grid-row: 10;
+}
+
+.title-row11 {
+  grid-column: 1;
+  grid-row: 11;
 }
 
 .details-row1 {
@@ -405,6 +396,12 @@ hr:after {
   grid-column: 2;
   grid-row: 6;
 }
+
+.details-row7 {
+  grid-column: 2;
+  grid-row: 7;
+}
+
 .details-row8 {
   grid-column: 2;
   grid-row: 8;
@@ -421,16 +418,23 @@ hr:after {
   grid-row: 10;
 }
 
+.details-row11 {
+  grid-column: 2;
+  grid-row: 11;
+}
+
 .row2,
 .row3,
 .row4,
 .row5,
 .row6,
-.row7,
-.row8,
-.row9,
 .row10 {
   border-bottom: 2px solid #F5F5F7;
+/*  padding-bottom: 2rem;*/
+}
+
+.row9 {
+  border-top: 2px solid #F5F5F7;
 }
 
 
@@ -497,6 +501,10 @@ hr:after {
   height: 1.5rem;
   display: inline-block;
   flex-wrap: wrap;
+}
+
+.resume-link {
+  width: 100%;
 }
 
 .copy-btn {
