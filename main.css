@@ -292,8 +292,7 @@ h2 {
   font-size: .9rem;
   display: grid;
   grid-template-columns: 35% 65%;
-  grid-template-rows: 60px 50px 50px 50px 50px 50px 20px 90px 10px 50px 50px;
-  padding: 0 2rem;
+  grid-template-rows: 60px 80px 50px 50px 50px 50px 20px 90px 10px 50px 50px;
   margin-top: 2rem;
 }
 
@@ -313,8 +312,13 @@ h2 {
   align-self: center;
 }
 
+.detail {
+    padding: 0 2rem;
+}
+
 .title-row1 {
   grid-column: 1;
+  padding: 1.4rem 0 1.4rem 2rem;
 }
 
 .title-row2 {
@@ -370,7 +374,8 @@ h2 {
 
 .details-row1 {
   grid-column: 2;
-  grid-row: 1; 
+  grid-row: 1;
+  padding: 1.4rem 2rem 1.4rem 2rem;
 }
 
 .details-row2 {
