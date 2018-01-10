@@ -6,4 +6,4 @@ This is our final static comp for module 1. The static comp challenge is a serie
 
 
 (My-static-comp3)[https://github.com/hannahbare/comp3/blob/master/static-comp3.png]
-(!Original-comp3)['https://github.com/hannahbare/comp3/blob/master/original-static-comp3.png']
+(Original-comp3)[https://github.com/hannahbare/comp3/blob/master/original-static-comp3.png]
