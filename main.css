@@ -34,7 +34,7 @@ body {
 h3 {
   text-align: center;
   color: #9D9BAC;
-  margin-bottom: .9rem;
+  margin-bottom: 1rem;
 }
 
 h3:hover {
@@ -42,14 +42,17 @@ h3:hover {
   font-weight: bold;
 }
 
+.link {
+    margin-left: 8%;
+}
+
 .sidebar-target {
-  margin-left: 15%;
+  margin-left: 9%;
 }
 
 h4 {
   font-size: .7rem;
   margin: 1.8rem 0 .9rem;
-  font-weight: lighter;
 }
 
 .sidebar-links {
@@ -68,12 +71,6 @@ a:hover {
   font-weight: bold;
   background-color: #303949;
 }
-
-/*.sidebox2,
-.sidebox3,
-.sidebox4 {
-  padding: 1.6rem .6rem;
-}*/
 
 .sidebar-links a {
   display: block;
@@ -100,22 +97,24 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
 /* Start right side of wesbite */
 
 .wrap {
   flex: 2;
   background-color: #EDF2F6;
   display: grid;
-  grid-template-rows: 3.1rem 5rem 3.6rem 12rem auto;
+  grid-template-rows: 3.1rem 6rem 4.5rem 13rem 4.6rem auto;
 }
 
 .top-section {
   grid-row: 1;
-/*  padding: 1rem 1rem 0;*/ /*THIS MAKES THE LINES WEIRD AT THE TOP*/
-}
-
-.blue-arrow {
-  color: #26A5F6;
 }
 
 .main-row1 {
@@ -173,6 +172,14 @@ a:hover {
   grid-column: 1 / span 1;
 }
 
+.title-post {
+  color: #AEDFFB;
+}
+
+.title-post:hover {
+  color: #55B9FB;
+}
+
 h2 {
   font-size: 1.4rem;
   margin-bottom: .6rem;
@@ -225,53 +232,154 @@ h2 {
 
 .main-row3 {
   grid-row: 3 / span 1;
-  font-size: .7rem;
+  font-size: .9rem;
   padding: 2rem 0 1rem 2rem;
   background-color: #FFFFFF;
+  display: inline-block;
 }
 
 .nav {
+  display: inline;
   margin-right: 1.6rem;
   text-decoration: none;
-  color: #9D9BAC
+  color: #9D9BAC;
+  cursor: pointer;
+  padding-bottom: 1.4rem;
 }
 
 .nav:hover {
   font-weight: bold;
   color: black;
+  border-bottom: 4px solid #55B9FB;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .main-row4 {
-  grid-row: 4 / span 1;
-  position: relative;
+  grid-row: 4;
   display: grid;
-  grid-template-columns: 60% 40%;
-  background-color: #EDF2F6;
-  border-bottom: 1px solid #D9DEE4;
+  grid-template-columns: 50% 50%;
+  font-size: .9rem;
+  margin: 2rem 0 2rem 2rem;
 }
 
-.circle-graphs {
+.col1-graphs {
   grid-column: 1 / span 1;
-  justify-self: center;
+  align-self: center;
+  margin: 0 1.4rem 2rem 0;
 }
 
-.large-graph {
+.col2-graphs {
+  grid-column: 2 / span 1;
+}
+
+.circle {
+  display: inline-block;
+  border: 7px solid;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-right: 1.8rem;
+}
+
+.graph-one {
+  border-color: #50B8BD #50B8BD #D9E4EA #50B8BD;
+  align-self: center;
+}
+
+.graph-two {
+  border-color: #D9E4EA #D9E4EA #D9E4EA #25A5FA;
+}
+
+.graph-three {
+  border-color: #D9E4EA #D9E4EA #AC65B2 #D9E4EA;
+}
+
+.circle-numbers {
+  font-size: 1.4rem;
+  display: block;
+  padding-bottom: .4rem;
+}
+
+.circle-text {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+
+
+.graph-four {
+  align-self: center;
+  display: inline-block;
+  background-image: url('imgs/graph.png');
+  width: 350px;
+  height: 120px;
+}
+
+.main-row5 {
+  grid-row: 5;
+  height: 1.6rem;
+  padding-bottom: 2.4rem;
+  display: block;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: 1px solid #D9DEE4;
+  cursor: pointer;
+
+  
+}
+
+.graph-btns {
+  background-color: #FAFBFC;
+  color: #7B7E87;
+  border: 1px solid #D9DEE4;
+}
+
+
+.col1-btns {
+  grid-column: 1;
+  border-radius: 50px;
+  width: 133px;
+  padding: .6rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.col1-btns:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.col2-btns {
+  grid-column: 2;
+  width: 82px;
+  padding: .6rem;
+  border-radius: 50px;
+  justify-self: center;
+  align-self: center;
+}
+
+.col2-btns:hover {
+  color: black;
+  font-weight: bold;
+}
+
+
+
+
+/*.large-graph {
   grid-column: 2 / span 1;
   display: grid;
 }
-
-.graph-buttons {
-  margin: 130px 0 20px;
-  justify-self: center;
-  height: 1.6rem;
-  border-radius: 50px;
-  padding: .4rem;
-}
-
-
-
-
-
 /* SECTION FOR GRAPHS */
 
 
@@ -279,7 +387,44 @@ h2 {
 
 
 
-.main-row5 {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-row6 {
+  grid-row: 6;
   display: grid;
   grid-template-columns: 75% 25%;
   color: #707E94;
@@ -292,7 +437,7 @@ h2 {
   font-size: .9rem;
   display: grid;
   grid-template-columns: 35% 65%;
-  grid-template-rows: 60px 80px 50px 50px 50px 50px 20px 90px 10px 50px 50px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 10px 100px 10px 60px 60px;
   margin-top: 2rem;
 }
 
@@ -300,6 +445,10 @@ h2 {
   background-color: #707E94;
   color: #FFFFFF;
   font-weight: bold;
+}
+
+.edit {
+  background-color: #7A89A2;
 }
 
 .content-title {
@@ -313,7 +462,7 @@ h2 {
 }
 
 .detail {
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 }
 
 .title-row1 {
@@ -435,7 +584,6 @@ h2 {
 .row6,
 .row10 {
   border-bottom: 2px solid #F5F5F7;
-/*  padding-bottom: 2rem;*/
 }
 
 .row9 {
